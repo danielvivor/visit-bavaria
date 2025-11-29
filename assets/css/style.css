@@ -90,9 +90,9 @@ main {
 
 /* Hero section */
 #hero {
-    height: 100dvh;
+    height: 100vh;
     width: 100%;
-    background: url("/assets/images/hero-image.jpg") no-repeat center center/cover;
+    background: url("../images/hero-image.jpg") no-repeat center center/cover;
 }
 
 /* Footer */
