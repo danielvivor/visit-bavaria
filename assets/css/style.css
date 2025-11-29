@@ -20,6 +20,7 @@ body {
 
 h1, h2, h4 {
     font-family: 'Oswald', sans-serif;
+    font-weight: 200;
     text-transform: none;
     letter-spacing: 2px;
     color: #000000;
@@ -96,16 +97,16 @@ main {
 }
 
 #cover-text {
-    background-color: rgba(255, 255, 255, 0.15);
+    background: rgba(0, 0, 0, 0.15);
     font-size: 130%;
-    position: fixed;
     width: 100%;
-    top: 400px;
-    padding-bottom: 2px;
+    position: fixed;
+    top: 40vh;
 }
 
 #cover-text > h2 , #cover-text >h4 {
     text-align: center;
+    color: #ffffff;
 }
 
 #cover-text > h4 {
@@ -129,12 +130,18 @@ main {
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
     /* Header */
+    #logo {
+        font-size: 3rem;
+        letter-spacing: 15px;
+        padding-left: 1rem;
+    }
+
     nav {
         display: block;
         position: relative;
         box-shadow: none;
         width: fit-content;
-        padding-right: 1rem;
+        justify-content: baseline;
     }
 
     #menu {
@@ -142,28 +149,29 @@ main {
     }
 
     #menu > li {
-        padding-left: 1rem;
+        padding: 0 2rem;
+    }
+
+    #menu a {
+        font-size: 12px;
     }
 
     .nav-toggle-label {
         display: none;
     }
 
-    #logo {
-        font-size: 280%;
-        line-height: 75px;
-        margin: 0 0.5rem;
-    }
 /* Main content */
     main {
-        margin-top: 79px;
+        min-height: 100vh;
     }
 
     #cover-text {
-        width: 600px;
-        right: 50px;
-        padding: 3px;
-        font-size: 2rem;
+        background: rgba(0, 0, 0, 0.68);
+        width: 35%;
+        left: 50px;
+        position: fixed;
+        font-size: 2px;
+        top: 10vh;
     }
 
     #cover-text > h4 {
@@ -173,15 +181,51 @@ main {
     #cover-text > h2, #cover-text > h4 {
         padding: 0.7rem 0;
     }
-
-
 }
 
 /* Media query: small laptops and larger (992px and up) */
 @media screen and (min-width: 992px){
 
+    .active {
+        border-bottom: 2px solid #000000;
+    }
+
+    #menu a {
+        font-size: 180%;
+    }
+
     #menu a:hover {
-        border-bottom: 1px solid #000000;
+        border-bottom: 2px solid #000000;
+        font-size: 200%;
+    }
+
+     #cover-text {
+        width: 100%;
+        padding: 3px;
+        position: fixed;
+        font-size: 2.5rem;
+        top: 60vh;
+    }
+
+    #cover-text > h2, #cover-text > h4 {
+        padding-bottom: 3rem;
+        letter-spacing: 5px;
+    }
+}
+
+/* Media query: desktops and larger (1024px and up) */
+@media screen and (min-width: 1024px){
+
+    #logo {
+        font-size: ;
+    }
+    #cover-text {
+        width: 650px;
+        left: 10rem;
+        padding: 3px;
+        position: fixed;
+        font-size: 1.6rem;
+        top: 50vh;
     }
 }
 
