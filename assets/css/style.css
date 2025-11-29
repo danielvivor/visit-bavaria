@@ -18,6 +18,13 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+h1, h2, h4 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: none;
+    letter-spacing: 2px;
+    color: #000000;
+}
+
 /* Header */
 header {
   background-color: #ffffff;
@@ -29,13 +36,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-}
-
-h1 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: none;
-    letter-spacing: 2px;
-    color: #000000;
 }
 
 header a {
@@ -95,6 +95,22 @@ main {
     background: url("../images/hero-image.jpg") no-repeat center center/cover;
 }
 
+#cover-text {
+    background-color: rgba(255, 255, 255, 0.15);
+    font-size: 130%;
+    position: fixed;
+    width: 100%;
+    top: 400px;
+    padding-bottom: 2px;
+}
+
+#cover-text > h2 , #cover-text >h4 {
+    text-align: center;
+}
+
+#cover-text > h4 {
+    display: none;
+}
 /* Footer */
 #social-networks {
     text-align: center;
@@ -142,6 +158,23 @@ main {
     main {
         margin-top: 79px;
     }
+
+    #cover-text {
+        width: 600px;
+        right: 50px;
+        padding: 3px;
+        font-size: 2rem;
+    }
+
+    #cover-text > h4 {
+        display: block;
+    }
+
+    #cover-text > h2, #cover-text > h4 {
+        padding: 0.7rem 0;
+    }
+
+
 }
 
 /* Media query: small laptops and larger (992px and up) */
