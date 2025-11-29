@@ -215,10 +215,6 @@ main {
 
 /* Media query: desktops and larger (1024px and up) */
 @media screen and (min-width: 1024px){
-
-    #logo {
-        font-size: ;
-    }
     #cover-text {
         width: 650px;
         left: 10rem;
