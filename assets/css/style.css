@@ -17,6 +17,7 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+
 h1, h2, h4 {
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
@@ -109,7 +110,75 @@ main {
     color: #ffffff;
 }
 
+/* Footer */
+#social-networks {
+    text-align: center;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 140%;
+    padding: 1%;
+    color: #000000;
+}
+
 /* Styles for places.html start here*/
+/* Signup section background */
+#landmarks {
+    padding: 0 0.5rem;
+    background: rgba(194, 169, 127, 0.5);
+}
+
+#landmarks-select h3 {
+    padding-top: 1.5rem;
+    font-size: 22px;
+    color: #8d540a;
+    font-weight: 500;
+    font-style: italic;
+}
+
+#landmarks-select h5 {
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 18px;
+    padding-bottom: 0.5rem;
+}
+
+#landmarks-select a {
+    text-decoration: none;
+    color: red;
+    font-style: italic;
+}
+
+/* Images of landmarks */
+#neuschwanstein {
+    background: url("../images/neuschwanstein-castle.jpg") no-repeat center center/cover;
+    height: 200px;
+}
+
+#altes {
+    background: url("../images/altes.jpg") no-repeat center center/cover;
+    height: 200px;
+}
+
+#maria-gern {
+    background: url("../images/altes.jpg") no-repeat center center/cover;
+    height: 200px;
+}
+
+#bavarian-alps {
+    background: url("../images/bavarian-alps.jpg") no-repeat center center/cover;
+    height: 200px;
+}
+
+
+/* styles for places.html ends here */
+
+
+/* Styles for signup.html start here*/
 /* Signup section background */
 #signup {
   background: url("../images/signup-image.jpg") no-repeat center center/cover;
@@ -129,15 +198,17 @@ main {
 
 #signup h2 {
   font-size: 30px;
+  font-weight: 400;
 }
 
 #signup h4 {
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 /* Signup box */
 .signup-box {
-  background: rgba(194, 169, 127, 0.6); /* parchment tone */
+  background: rgba(194, 169, 127, 0.6);
   padding: 2rem;
   max-width: 500px;
   width: 100%;
@@ -175,23 +246,6 @@ main {
   font-size: 16px;
 }
 /* styles for signup.html ends here */
-
-
-/* Footer */
-#social-networks {
-    text-align: center;
-    padding: 15px 0;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
-
-#social-networks i {
-    font-size: 140%;
-    padding: 1%;
-    color: #000000;
-}
-
 
 
 /* Media query: tablets and larger (768px and up) */
@@ -279,6 +333,9 @@ main {
         padding-bottom: 3rem;
         letter-spacing: 5px;
     }
+
+    /* Styles for signup.html starts here */
+    S
 }
 
 /* Media query: desktops and larger (1024px and up) */
