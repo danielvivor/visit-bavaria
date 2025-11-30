@@ -123,7 +123,7 @@ main {
 /* Text above the form */
 #signup-header {
   text-align: center;
-  color: #ffffff;
+  color: #000000;
   padding: 5rem 0;
 }
 
@@ -133,6 +133,19 @@ main {
 
 #signup h4 {
   font-size: 20px;
+}
+
+/* Signup box */
+.signup-box {
+  background: rgba(194, 169, 127, 0.6); /* parchment tone */
+  padding: 2rem;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(60, 40, 10, 0.7);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 /* styles for signup.html ends here */
 
