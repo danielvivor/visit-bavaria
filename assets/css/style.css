@@ -116,11 +116,28 @@ main {
 /* Styles for places.html */
 
 #landmarks {
-    padding: 1rem 1rem;
+    padding: 0 0.5rem;
+    letter-spacing: 2px;
+    line-height: 25px;
+    background: rgba(194, 169, 127, 0.6);
 }
+
 #landmarks > h2 {
     text-transform: uppercase;
     font-size: 30px;
+    padding: 1rem 0 0 0.5rem;
+}
+
+#landmarks h5 {
+    font-weight: 500;
+}
+
+#landmarks h3 {
+    font-size: 22px;
+    padding-top: 2rem;
+    font-style: italic;
+    color: rgb(141, 84, 10);
+
 }
 
 #neuschwanstein {
@@ -140,6 +157,11 @@ main {
 #bavarian-alps {
     height: 300px;
     background: url("../images/bavarian-alps.jpg") no-repeat center center/cover;
+}
+
+.map-link {
+    text-decoration: none;
+    color: red;
 }
 
 
