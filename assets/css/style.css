@@ -14,7 +14,6 @@ body {
   display: flex;
   flex-direction: column;
   /* Generic project styles */
-  color: #3a3a3a;
   font-family: 'Lato', sans-serif;
 }
 
@@ -23,12 +22,11 @@ h1, h2, h4 {
     font-weight: 200;
     text-transform: none;
     letter-spacing: 2px;
-    color: #000000;
 }
 
 /* Header */
 header {
-  background-color: #ffffff;
+  background: #ffffff;
   padding: 0 1rem;
   position: fixed;
   z-index: 99;
@@ -41,7 +39,7 @@ header {
 
 header a {
     text-decoration: none;
-    color: inherit;
+    color: #000000;
 }
 
 #menu {
@@ -93,15 +91,17 @@ main {
 #hero {
     height: 100vh;
     width: 100%;
+    position: relative;
     background: url("../images/hero-image.jpg") no-repeat center center/cover;
 }
 
 #cover-text {
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 1);
     font-size: 130%;
     width: 100%;
-    position: fixed;
-    top: 40vh;
+    position: absolute;
+    bottom: 300px;
+    min-height: 50px;
 }
 
 #cover-text > h2 , #cover-text >h4 {
@@ -112,36 +112,64 @@ main {
 #cover-text > h4 {
     display: none;
 }
+
+/* Styles for places.html */
+
+#landmarks {
+    padding: 1rem 1rem;
+}
+#landmarks > h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+#neuschwanstein {
+    height: 300px;
+    background: url("../images/neuschwanstein-castle.jpg") no-repeat center center/cover;
+}
+
+#altes {
+    height: 300px;
+    background: url("../images/altes.jpg") no-repeat center center/cover;
+}
+
+#maria-gern {
+    height: 300px;
+    background: url("../images/maria-gern.webp") no-repeat center center/cover;
+}
+#bavarian-alps {
+    height: 300px;
+    background: url("../images/bavarian-alps.jpg") no-repeat center center/cover;
+}
+
+
 /* Footer */
 #social-networks {
     text-align: center;
-    padding: 20px 0;
+    padding: 15px 0;
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
 }
 
 #social-networks i {
-    font-size: 200%;
-    padding: 5%;
+    font-size: 140%;
+    padding: 1%;
     color: #000000;
 }
+
+
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
     /* Header */
-    #logo {
-        font-size: 3rem;
-        letter-spacing: 15px;
-        padding-left: 1rem;
-    }
 
     nav {
         display: block;
         position: relative;
         box-shadow: none;
         width: fit-content;
-        justify-content: baseline;
+        padding-right: 1rem;
     }
 
     #menu {
@@ -149,29 +177,29 @@ main {
     }
 
     #menu > li {
-        padding: 0 2rem;
-    }
-
-    #menu a {
-        font-size: 12px;
+        padding-left: 1rem;
     }
 
     .nav-toggle-label {
         display: none;
     }
 
-/* Main content */
-    main {
-        min-height: 100vh;
+    #logo {
+        font-size: 250%;
+        line-height: 75px;
+        margin: 0 0.5rem;
     }
 
+/* Main content */
+    main {
+        margin-top: 79px;
+    }
+
+    /* Hero section */
     #cover-text {
         background: rgba(0, 0, 0, 0.68);
-        width: 35%;
-        left: 50px;
-        position: fixed;
-        font-size: 2px;
-        top: 10vh;
+        width: 300px;
+        left: 30px;
     }
 
     #cover-text > h4 {
@@ -185,18 +213,17 @@ main {
 
 /* Media query: small laptops and larger (992px and up) */
 @media screen and (min-width: 992px){
+    #menu a:hover {
+        border-bottom: 2px solid #000000;
+        font-size: 200%;
+    }
 
-    .active {
+     .active {
         border-bottom: 2px solid #000000;
     }
 
     #menu a {
         font-size: 180%;
-    }
-
-    #menu a:hover {
-        border-bottom: 2px solid #000000;
-        font-size: 200%;
     }
 
      #cover-text {
