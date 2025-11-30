@@ -96,9 +96,9 @@ main {
 }
 
 #cover-text {
-    background: rgba(0, 0, 0, 1);
-    font-size: 130%;
-    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 110%;
+    width: 80%;
     position: absolute;
     bottom: 300px;
     min-height: 50px;
@@ -109,23 +109,22 @@ main {
     color: #ffffff;
 }
 
-#cover-text > h4 {
-    display: none;
-}
-
 /* Styles for places.html */
 
 #landmarks {
     padding: 0 0.5rem;
+    background: rgba(194, 169, 127, 0.6);
+}
+
+#landmarks-select {
     letter-spacing: 2px;
     line-height: 25px;
-    background: rgba(194, 169, 127, 0.6);
 }
 
 #landmarks > h2 {
     text-transform: uppercase;
     font-size: 30px;
-    padding: 1rem 0 0 0.5rem;
+    padding: 1rem 0 0 0;
 }
 
 #landmarks h5 {
@@ -137,7 +136,6 @@ main {
     padding-top: 2rem;
     font-style: italic;
     color: rgb(141, 84, 10);
-
 }
 
 #neuschwanstein {
@@ -224,14 +222,21 @@ main {
         left: 30px;
     }
 
-    #cover-text > h4 {
-        display: block;
-    }
-
     #cover-text > h2, #cover-text > h4 {
         padding: 0.7rem 0;
     }
-}
+
+    /* Styles for pages.html */
+    #landmarks-select {
+        line-height: 40px;
+    }
+    #landmarks h3 {
+        font-size: 28px;
+    }
+
+    #landmarks h5 {
+        font-size: 18px;
+    }
 
 /* Media query: small laptops and larger (992px and up) */
 @media screen and (min-width: 992px){
@@ -274,3 +279,4 @@ main {
     }
 }
 
+}
