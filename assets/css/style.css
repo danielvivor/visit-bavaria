@@ -147,6 +147,13 @@ main {
   flex-direction: column;
   gap: 1.2rem;
 }
+
+/* Labels and input */
+.signup-box label {
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
 /* styles for signup.html ends here */
 
 
