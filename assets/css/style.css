@@ -109,58 +109,17 @@ main {
     color: #ffffff;
 }
 
-/* Styles for places.html */
-
-#landmarks {
-    padding: 0 0.5rem;
-    background: rgba(194, 169, 127, 0.6);
+/* Styles for places.html start here*/
+/* Signup section background */
+#signup {
+  background: url("../images/signup-image.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0.5rem;
 }
-
-#landmarks-select {
-    letter-spacing: 2px;
-    line-height: 25px;
-}
-
-#landmarks > h2 {
-    text-transform: uppercase;
-    font-size: 30px;
-    padding: 1rem 0 0 0;
-}
-
-#landmarks h5 {
-    font-weight: 500;
-}
-
-#landmarks h3 {
-    font-size: 22px;
-    padding-top: 2rem;
-    font-style: italic;
-    color: rgb(141, 84, 10);
-}
-
-#neuschwanstein {
-    height: 300px;
-    background: url("../images/neuschwanstein-castle.jpg") no-repeat center center/cover;
-}
-
-#altes {
-    height: 300px;
-    background: url("../images/altes.jpg") no-repeat center center/cover;
-}
-
-#maria-gern {
-    height: 300px;
-    background: url("../images/maria-gern.webp") no-repeat center center/cover;
-}
-#bavarian-alps {
-    height: 300px;
-    background: url("../images/bavarian-alps.jpg") no-repeat center center/cover;
-}
-
-.map-link {
-    text-decoration: none;
-    color: red;
-}
+/* styles for signup.html ends here */
 
 
 /* Footer */
