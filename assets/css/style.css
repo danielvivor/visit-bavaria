@@ -119,6 +119,21 @@ main {
   align-items: center;
   padding: 0 0.5rem;
 }
+
+/* Text above the form */
+#signup-header {
+  text-align: center;
+  color: #ffffff;
+  padding: 5rem 0;
+}
+
+#signup h2 {
+  font-size: 30px;
+}
+
+#signup h4 {
+  font-size: 20px;
+}
 /* styles for signup.html ends here */
 
 
