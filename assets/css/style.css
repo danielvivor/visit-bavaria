@@ -14,15 +14,14 @@ body {
   display: flex;
   flex-direction: column;
   /* Generic project styles */
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
-
-h1, h2, h4 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 200;
-    text-transform: none;
-    letter-spacing: 2px;
+#logo {
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  text-transform: none;
+  letter-spacing: 3px;
 }
 
 /* Header */
@@ -39,144 +38,147 @@ header {
 }
 
 header a {
-    text-decoration: none;
-    color: #000000;
+  text-decoration: none;
+  color: #000000;
 }
 
 #menu {
-    font-size: 110%;
-    letter-spacing: 4px;
-    list-style-type: none;
+  font-size: 20px;
+  letter-spacing: 4px;
+  list-style-type: none;
 }
 
 #menu > li {
-    margin-bottom: 1em;
+  margin-bottom: 1.5rem;
 }
 
 .active {
-    border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #000000;
 }
 
 /* Navbar styles with dropdown toggle */
 nav {
-    position: absolute;
-    background-color: #ffffff;
-    width: 100%;
-    left: 0;
-    padding: 0 1rem;
-    box-shadow: 0 2px 2px #000000;
-    display: none;
-    top: 100%;
+  position: absolute;
+  background-color: #ffffff;
+  width: 100%;
+  left: 0;
+  padding: 0 1rem;
+  box-shadow: 0 2px 2px #000000;
+  display: none;
+  top: 100%;
 }
 
 /* Nav toggle */
-#nav-toggle:checked~nav {
-    display: block;
+#nav-toggle:checked ~ nav {
+  display: block;
 }
 
 #nav-toggle {
-    display: none;
+  display: none;
 }
 
 .nav-toggle-label {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 /* Main content */
 main {
-  flex: 1 0 auto; /* Make main section take up any surplus space to push footer down */
+  flex: 1 0 auto;
+  /* Make main section take up any surplus space to push footer down */
   margin-top: 47px;
 }
 
 /* Hero section */
 #hero {
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    background: url("../images/hero-image.jpg") no-repeat center center/cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: url("../images/hero-image.jpg") no-repeat center center/cover;
 }
 
 #cover-text {
-    background: rgba(0, 0, 0, 0.5);
-    font-size: 110%;
-    width: 80%;
-    position: absolute;
-    bottom: 300px;
-    min-height: 50px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.4);
+  top: 40vh;
+  max-height: 200px;
+  width: 100%;
+  position: sticky;
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
 }
 
-#cover-text > h2 , #cover-text >h4 {
-    text-align: center;
-    color: #ffffff;
+#cover-text > h2,
+#cover-text h4 {
+  font-weight: 400;
+  padding: 3px;
 }
 
 /* Footer */
 #social-networks {
-    text-align: center;
-    padding: 15px 0;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
+  text-align: center;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
 }
 
 #social-networks i {
-    font-size: 140%;
-    padding: 1%;
-    color: #000000;
+  font-size: 25px;
+  color: #000000;
 }
 
 /* Styles for places.html start here*/
-/* Signup section background */
 #landmarks {
-    padding: 0 0.5rem;
-    background: rgba(194, 169, 127, 0.5);
+  padding: 0 0.5rem;
+  background: rgba(194, 169, 127, 0.5);
 }
 
 #landmarks-select h3 {
-    padding-top: 1.5rem;
-    font-size: 22px;
-    color: #8d540a;
-    font-weight: 500;
-    font-style: italic;
+  padding-top: 1.5rem;
+  font-size: 22px;
+  color: #8d540a;
+  font-weight: 500;
+  font-style: italic;
 }
 
 #landmarks-select h5 {
-    font-weight: 500;
-    letter-spacing: 2px;
-    line-height: 18px;
-    padding-bottom: 0.5rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 18px;
+  padding-bottom: 0.5rem;
 }
 
 #landmarks-select a {
-    text-decoration: none;
-    color: red;
-    font-style: italic;
+  text-decoration: none;
+  color: red;
+  font-style: italic;
 }
 
 /* Images of landmarks */
 #neuschwanstein {
-    background: url("../images/neuschwanstein-castle.jpg") no-repeat center center/cover;
-    height: 200px;
+  background: url("../images/neuschwanstein-castle.jpg") no-repeat center
+    center/cover;
+  height: 200px;
 }
 
 #altes {
-    background: url("../images/altes.jpg") no-repeat center center/cover;
-    height: 200px;
+  background: url("../images/altes.jpg") no-repeat center center/cover;
+  height: 200px;
 }
 
 #maria-gern {
-    background: url("../images/altes.jpg") no-repeat center center/cover;
-    height: 200px;
+  background: url("../images/altes.jpg") no-repeat center center/cover;
+  height: 200px;
 }
 
 #bavarian-alps {
-    background: url("../images/bavarian-alps.jpg") no-repeat center center/cover;
-    height: 200px;
+  background: url("../images/bavarian-alps.jpg") no-repeat center center/cover;
+  height: 200px;
 }
 
-
 /* styles for places.html ends here */
-
 
 /* Styles for signup.html start here*/
 /* Signup section background */
@@ -197,7 +199,7 @@ main {
 }
 
 #signup h2 {
-  font-size: 30px;
+  font-size: 34px;
   font-weight: 400;
 }
 
@@ -210,7 +212,6 @@ main {
 .signup-box {
   background: rgba(194, 169, 127, 0.6);
   padding: 2rem;
-  max-width: 500px;
   width: 100%;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(60, 40, 10, 0.7);
@@ -245,109 +246,247 @@ main {
   font-weight: bold;
   font-size: 16px;
 }
-/* styles for signup.html ends here */
 
+/* styles for signup.html ends here */
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
-    /* Header */
+  /* Header */
 
-    nav {
-        display: block;
-        position: relative;
-        box-shadow: none;
-        width: fit-content;
-        padding-right: 1rem;
-    }
+  nav {
+    display: block;
+    position: relative;
+    box-shadow: none;
+    width: fit-content;
+  }
 
-    #menu {
-        display: flex;
-    }
+  #menu {
+    display: flex;
+  }
 
+  #menu > li {
+    padding-left: 2rem;
+  }
+
+  .nav-toggle-label {
+    display: none;
+  }
+
+  #logo {
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  /* Main content */
+  main {
+    margin-top: 69px;
+  }
+
+  /* Hero section */
+  #cover-text {
+    background: rgba(0, 0, 0, 0.7);
+    top: 60vh;
+    width: 60%;
+    left: 30px;
+    position: sticky;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 50px;
+    padding-left: 10px;
+  }
+
+  /* Styles for pages.html starts here*/
+  #places {
+    font-size: 42px;
+  }
+
+  #landmarks h3 {
+    font-size: 30px;
+  }
+
+  #landmarks h5 {
+    font-size: 18px;
+    line-height: 34px;
+  }
+  /* Images of landmarks */
+  #neuschwanstein,
+  #altes,
+  #maria-gern,
+  #bavarian-alps {
+    height: 300px;
+  }
+
+  /* Styles for pages ends here */
+
+  /* Styles for signup.html starts here */
+  #signup h4 {
+    font-size: 22px;
+  }
+  /* Styles for signup.html ends here */
+
+  /* Media query: small laptops and larger (992px and up) */
+  @media screen and (min-width: 992px) {
     #menu > li {
-        padding-left: 1rem;
-    }
-
-    .nav-toggle-label {
-        display: none;
-    }
-
-    #logo {
-        font-size: 250%;
-        line-height: 75px;
-        margin: 0 0.5rem;
-    }
-
-/* Main content */
-    main {
-        margin-top: 79px;
-    }
-
-    /* Hero section */
-    #cover-text {
-        background: rgba(0, 0, 0, 0.68);
-        width: 300px;
-        left: 30px;
-    }
-
-    #cover-text > h2, #cover-text > h4 {
-        padding: 0.7rem 0;
-    }
-
-    /* Styles for pages.html */
-    #landmarks-select {
-        line-height: 40px;
-    }
-    #landmarks h3 {
-        font-size: 28px;
-    }
-
-    #landmarks h5 {
-        font-size: 18px;
-    }
-
-/* Media query: small laptops and larger (992px and up) */
-@media screen and (min-width: 992px){
-    #menu a:hover {
-        border-bottom: 2px solid #000000;
-        font-size: 200%;
-    }
-
-     .active {
-        border-bottom: 2px solid #000000;
+      padding-right: 25px;
     }
 
     #menu a {
-        font-size: 180%;
+      font-size: 26px;
     }
 
-     #cover-text {
-        width: 100%;
-        padding: 3px;
-        position: fixed;
-        font-size: 2.5rem;
-        top: 60vh;
+    #menu a:hover {
+      font-size: 28px;
+      border-bottom: 2px solid #000000;
     }
 
-    #cover-text > h2, #cover-text > h4 {
-        padding-bottom: 3rem;
-        letter-spacing: 5px;
+    #logo {
+      font-size: 45px;
+      line-height: 40px;
+      padding-top: 8px;
+      letter-spacing: 20px;
     }
+
+    #cover-text {
+      top: 60vh;
+      width: 30%;
+      left: 150px;
+      font-size: 1.8rem;
+      padding: 20px;
+    }
+
+    /* Styles for pages.html starts here*/
+    #landmarks-select {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+    /* Images of landmarks */
+    #neuschwanstein,
+    #altes,
+    #maria-gern,
+    #bavarian-alps {
+      height: 400px;
+      padding-right: 0.5rem;
+    }
+
+    /* Styles for pages ends here */
 
     /* Styles for signup.html starts here */
-    S
-}
-
-/* Media query: desktops and larger (1024px and up) */
-@media screen and (min-width: 1024px){
-    #cover-text {
-        width: 650px;
-        left: 10rem;
-        padding: 3px;
-        position: fixed;
-        font-size: 1.6rem;
-        top: 50vh;
+    /* Text above the form */
+    #signup h2 {
+      font-size: 38px;
     }
-}
 
+    #signup h4 {
+      font-size: 22px;
+    }
+
+    /* Signup box */
+    .signup-box {
+      width: 700px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(60, 40, 10, 0.7);
+      gap: 2rem;
+    }
+
+    /* Labels and input */
+    .signup-box label {
+      font-weight: bold;
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+
+    .signup-box input[type="text"],
+    .signup-box input[type="email"] {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #8d540a;
+      border-radius: 6px;
+      background-color: #fdf6e3;
+      font-size: 30px;
+    }
+
+    /* Signup button */
+    #signup-button {
+      background-color: #8d540a;
+      border: none;
+      padding: 1rem;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 36px;
+    }
+
+    /* Styles for signup.html ends here */
+  }
+
+  /* Media query: desktops and larger (1024px and up) */
+  @media screen and (min-width: 1024px) {
+    #logo {
+      font-size: 25px;
+      line-height: 40px;
+    }
+
+    #menu a {
+      font-size: 16px;
+    }
+
+    #menu a:hover {
+      font-size: 20px;
+    }
+
+    #cover-text {
+      top: 50vh;
+      width: 25%;
+      left: 100px;
+      font-size: 1rem;
+    }
+    /* Styles for signup.html starts here */
+    /* Text above the form */
+    #signup h2 {
+      font-size: 40px;
+      font-weight: 400;
+    }
+
+    #signup h4 {
+      font-size: 24px;
+      font-weight: 300;
+    }
+
+    /* Signup box */
+    .signup-box {
+      width: 400px;
+      border-radius: 16px;
+      box-shadow: 0 0 10px rgba(60, 40, 10, 0.7);
+      gap: 1rem;
+    }
+
+    /* Labels and input */
+    .signup-box label {
+      font-weight: bold;
+      font-size: 16px;
+      letter-spacing: 2px;
+    }
+
+    .signup-box input[type="text"],
+    .signup-box input[type="email"] {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #8d540a;
+      border-radius: 6px;
+      background-color: #fdf6e3;
+      font-size: 18px;
+    }
+
+    /* Signup button */
+    #signup-button {
+      background-color: #8d540a;
+      border: none;
+      padding: 0.5rem;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    /* Styles for signup.html ends here */
+  }
 }
