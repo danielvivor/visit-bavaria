@@ -377,6 +377,10 @@ main {
       padding-right: 0.5rem;
     }
 
+    .landmarks-video {
+    height: 730px;
+  }
+
     /* Styles for pages ends here */
 
     /* Styles for signup.html starts here */
