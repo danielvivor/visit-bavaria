@@ -48,7 +48,7 @@ header a {
   list-style-type: none;
 }
 
-#menu > li {
+#menu>li {
   margin-bottom: 1.5rem;
 }
 
@@ -69,7 +69,7 @@ nav {
 }
 
 /* Nav toggle */
-#nav-toggle:checked ~ nav {
+#nav-toggle:checked~nav {
   display: block;
 }
 
@@ -109,7 +109,7 @@ main {
   font-size: 0.8rem;
 }
 
-#cover-text > h2,
+#cover-text>h2,
 #cover-text h4 {
   font-weight: 400;
   padding: 3px;
@@ -263,7 +263,7 @@ main {
     display: flex;
   }
 
-  #menu > li {
+  #menu>li {
     padding-left: 2rem;
   }
 
@@ -295,24 +295,30 @@ main {
   }
 
   /* Styles for pages.html starts here*/
- 
+
   /* Images of landmarks */
 
   .landmarks-select {
     height: 400px;
   }
+
+  .landmarks-video {
+    height: 450px;
+  }
+
   /* Styles for pages ends here */
 
   /* Styles for signup.html starts here */
   #signup h4 {
     font-size: 22px;
   }
+
   /* Styles for signup.html ends here */
 
   /* Media query: small laptops and larger (992px and up) */
   @media screen and (min-width: 992px) {
 
-    #menu > li {
+    #menu>li {
       padding-right: 25px;
     }
 
@@ -464,6 +470,7 @@ main {
       font-size: 20px;
       line-height: 40px;
     }
+
     /* Styles for pages ends here */
 
     /* Styles for signup.html starts here */
