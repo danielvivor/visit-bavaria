@@ -318,7 +318,7 @@ main {
   /* Media query: small laptops and larger (992px and up) */
   @media screen and (min-width: 992px) {
 
-    #menu>li {
+    #menu > li {
       padding-right: 25px;
     }
 
@@ -332,7 +332,7 @@ main {
     }
 
     #logo {
-      font-size: 45px;
+      font-size: 50px;
       line-height: 40px;
       padding-top: 8px;
       letter-spacing: 20px;
@@ -378,7 +378,7 @@ main {
     }
 
     .landmarks-video {
-    height: 730px;
+    height: 400px;
   }
 
     /* Styles for pages ends here */
