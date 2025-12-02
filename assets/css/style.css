@@ -475,6 +475,10 @@ main {
       line-height: 40px;
     }
 
+    .landmarks-video {
+    height: 460px;
+  }
+
     /* Styles for pages ends here */
 
     /* Styles for signup.html starts here */
