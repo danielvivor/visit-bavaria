@@ -44,7 +44,6 @@ It is designed with accessibility, user experience, and responsivity at its core
 - Version control managed via Git & GitHub
 - Final deployment matches development version
 - No broken internal links
-- Screenshots of the finished project included below
 
 ## Sections of the website
 ### Homepage
@@ -76,6 +75,7 @@ Offers ways to reach out for feedback, collaboration, or inquiries.
 
 ### Sign-up
 Allows users to register for updates, newsletters, or participation in community features.
+
 
 
 
